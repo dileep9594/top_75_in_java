@@ -14,9 +14,9 @@ package top_75_in_java.linkedList;
 public class ReverseList extends LinkedList {
 
     public void revList(){
-               Node prev = null ;
-               Node current = (Node) head;
-               Node next = null ;
+               ListNode prev = null ;
+               ListNode current = (ListNode) head;
+               ListNode next = null ;
                while ( current != null) {
                 next = current.next ;
                 current.next = prev ;

@@ -5,8 +5,8 @@ public class mergeTwoLists extends LinkedList{
     
     public LinkedList mergeLists(LinkedList list1 ,LinkedList list2) {
 
-        LinkedList dummy = new Node(-1) ;
-        LinkedList current = dummy ;
+        ListNode dummy = new ListNode(-1) ;
+        ListNode current = dummy ;
 
         while ( list1 != null || list2 != null) {
 
