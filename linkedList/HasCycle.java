@@ -1,4 +1,4 @@
-package top_75_in_java.linkedList;
+package linkedList;
 
 public class HasCycle {
 

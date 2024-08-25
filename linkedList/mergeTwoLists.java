@@ -1,31 +1,34 @@
-package top_75_in_java.linkedList;
+package linkedList;
 
-public class mergeTwoLists extends LinkedList{
+public class mergeTwoLists {
     
     
     public LinkedList mergeLists(LinkedList list1 ,LinkedList list2) {
 
-        ListNode dummy = new ListNode(-1) ;
-        ListNode current = dummy ;
+        ListNode node = new ListNode(-1) ;
+        LinkedList dummy = new LinkedList(node) ;
+        LinkedList current = dummy ;
 
         while ( list1 != null || list2 != null) {
 
-            if (list1.data < list2.data) {
-                current.next = list1 ;
-                list1 = list1.next ;
+            if (list1.head.data < list2.head.data) {
+                current.head.next = list1.head ;
+                list1.head = list1.head.next ;
             }else {
-                current.next = list2 ;
-                list2 = list2.next ;
+                current.head.next = list2.head ;
+                list2.head.next = list2.head ;
             }
-            current = current.next ;
+            current.head.next = current.head.next.next ;
+
+            if (list1 != null) {
+                current.head.next = list1.head;
+            } else {
+                current.head.next = list2.head;
+            }
             
         }
-        if (list1 != null) {
-            current.next = list1;
-        } else {
-            current.next = list2;
-        }
-    return dummy.next ;
+       
+    return dummy ;
 }
 
 }

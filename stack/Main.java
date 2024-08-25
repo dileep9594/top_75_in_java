@@ -1,4 +1,4 @@
-package top_75_in_java.stack;
+package stack;
 
 public class Main {
     public static void main(String[] args){

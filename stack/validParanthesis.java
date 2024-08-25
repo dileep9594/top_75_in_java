@@ -1,4 +1,4 @@
-package top_75_in_java.stack;
+package stack;
 import java.util.Stack;
 public class validParanthesis {
 

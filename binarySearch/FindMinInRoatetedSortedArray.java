@@ -1,4 +1,4 @@
-package top_75_in_java.binarySearch;
+package binarySearch;
 
 public class FindMinInRoatetedSortedArray {
     
