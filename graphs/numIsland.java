@@ -1,6 +1,6 @@
 package graphs;
 
-public class numIsland {
+public class NumIsland {
 
     private void dfs(char[][] grid, int row, int col) {
         int numRows = grid.length;
@@ -17,9 +17,6 @@ public class numIsland {
         dfs(grid, row, col - 1);
         dfs(grid, row, col + 1);
     }
-
-    
-
 
     public int numIsland(char[][] grid){
         if (grid == null || grid.length == 0 ){

@@ -12,7 +12,7 @@ public class mergeKLists {
 
     PriorityQueue<ListNode> minHeap = new PriorityQueue<>(new Comparator<ListNode>() {
         public int compare(ListNode a, ListNode b) {
-            return a.data - b.data;
+            return a.val - b.val;
         }
     });
 

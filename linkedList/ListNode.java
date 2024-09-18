@@ -1,11 +1,11 @@
 package linkedList;
 
 public class ListNode {
-    int data ;
+    int val ;
     ListNode next ;
 
-    public  ListNode(int data) {
-         this.data = data ;
+    public  ListNode(int val) {
+         this.val = val ;
          this.next = null ;
     }
 

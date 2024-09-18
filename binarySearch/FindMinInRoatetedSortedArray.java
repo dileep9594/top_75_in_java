@@ -2,7 +2,7 @@ package binarySearch;
 
 public class FindMinInRoatetedSortedArray {
     
-    public int FindMinInRoatetedSortedArray (int nums[]){
+    public int findMinInRoatetedSortedArray (int nums[]){
         int left =0 ;
         int right = nums.length-1;
         while (left <right ){

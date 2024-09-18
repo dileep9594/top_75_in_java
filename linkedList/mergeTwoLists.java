@@ -3,32 +3,29 @@ package linkedList;
 public class mergeTwoLists {
     
     
-    public LinkedList mergeLists(LinkedList list1 ,LinkedList list2) {
+    public ListNode mergeLists(ListNode list1 ,ListNode list2) {
 
-        ListNode node = new ListNode(-1) ;
-        LinkedList dummy = new LinkedList(node) ;
-        LinkedList current = dummy ;
+        ListNode dummy = new ListNode(0);
+        ListNode node = dummy;
 
-        while ( list1 != null || list2 != null) {
-
-            if (list1.head.data < list2.head.data) {
-                current.head.next = list1.head ;
-                list1.head = list1.head.next ;
-            }else {
-                current.head.next = list2.head ;
-                list2.head.next = list2.head ;
-            }
-            current.head.next = current.head.next.next ;
-
-            if (list1 != null) {
-                current.head.next = list1.head;
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                node.next = list1;
+                list1 = list1.next;
             } else {
-                current.head.next = list2.head;
+                node.next = list2;
+                list2 = list2.next;
             }
-            
+            node = node.next;
         }
-       
-    return dummy ;
+
+        if (list1 != null) {
+            node.next = list1;
+        } else {
+            node.next = list2;
+        }
+
+        return dummy.next;
 }
 
 }

@@ -26,7 +26,7 @@ public class LinkedList{
  public ListNode printList() {
     ListNode current = head;
     while (current != null) {
-        System.out.print(current.data + " ");
+        System.out.print(current.val + " ");
         current = current.next;
     }
     System.out.println();
@@ -54,7 +54,7 @@ public ListNode revList(){
         sb.append("[");
         ListNode current = this.head;
         while (current != null) {
-            sb.append(current.data);
+            sb.append(current.val);
             if (current.next != null) {
                 sb.append(", ");
             }

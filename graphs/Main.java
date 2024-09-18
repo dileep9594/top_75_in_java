@@ -9,7 +9,7 @@ public class Main {
             {'0', '0', '0', '0', '0'}
         };
 
-        numIsland ns = new numIsland() ;
+        NumIsland ns = new NumIsland() ;
         int ans = ns.numIsland(grid);
         System.out.println(ans);
         

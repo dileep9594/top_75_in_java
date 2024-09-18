@@ -2,7 +2,7 @@ package binarySearch;
 
 public class SearchInRotatedSortedArray {
 
-    public int SearchInRotatedSortedArray(int nums [],int target){
+    public int searchInRotatedSortedArray(int nums [],int target){
         int left = 0;
         int right = nums.length -1;
         while (left <= right){
