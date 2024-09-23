@@ -37,8 +37,8 @@ public class Tree {
            inOrder(root.right);
     }
 
-    public List<Integer> printLeftView(Node root){
-        List<Integer> ans = new ArrayList() ;
+    public List<Double> printLeftView(Node root){
+        List<Double> ans = new ArrayList() ;
         Queue<Node> que = new LinkedList() ;
         que.add(root);
         while (!que.isEmpty()) {
@@ -60,8 +60,8 @@ public class Tree {
         return ans ;
     }
 
-    public List<Integer> printRightView(Node root){
-        List<Integer> ans = new ArrayList() ;
+    public List<Double> printRightView(Node root){
+        List<Double> ans = new ArrayList() ;
         Queue<Node> que = new LinkedList() ;
         que.add(root) ;
         while (!que.isEmpty()) {
@@ -89,10 +89,13 @@ public class Tree {
         if(!(left < node.data && node.data < right)){
             return false ;
         }
-        int leftval =  (int) node.data ;
+        Double leftval =  node.data ;
         return (valid(node.left, left, leftval) && valid(node.right, leftval, right) );
     }
     public boolean isValid(Node root){
         return valid(root , Double.NEGATIVE_INFINITY,Double.POSITIVE_INFINITY) ;
     }
+
+
+
 }

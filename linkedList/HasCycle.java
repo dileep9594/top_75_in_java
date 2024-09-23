@@ -2,7 +2,7 @@ package linkedList;
 
 public class HasCycle {
 
-    public boolean HasCycle(ListNode head) {
+    public boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) {
             return false;
         }
