@@ -1,6 +1,5 @@
 package tree;
 
-
 import java.util.*;
 
 
@@ -92,6 +91,7 @@ public class Tree {
         Double leftval =  node.data ;
         return (valid(node.left, left, leftval) && valid(node.right, leftval, right) );
     }
+    
     public boolean isValid(Node root){
         return valid(root , Double.NEGATIVE_INFINITY,Double.POSITIVE_INFINITY) ;
     }
