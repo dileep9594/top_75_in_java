@@ -2,6 +2,8 @@ package tree;
 
 import java.util.*;
 
+import javax.swing.tree.TreeNode;
+
 
 public class Tree {
     
@@ -95,7 +97,6 @@ public class Tree {
     public boolean isValid(Node root){
         return valid(root , Double.NEGATIVE_INFINITY,Double.POSITIVE_INFINITY) ;
     }
-
 
 
 }
